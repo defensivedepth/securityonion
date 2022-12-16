@@ -8,6 +8,10 @@
 
 . /usr/sbin/so-common
 
+so-elasticsearch-restart --force
+
+sleep 180
+
 
 # Create ES Token 
 ESTOKEN=$(curl -K /opt/so/conf/elasticsearch/curl.config -L -X POST "localhost:5601/api/fleet/service_tokens" -H 'kbn-xsrf: true' -H 'Content-Type: application/json' |  jq -r .value)
