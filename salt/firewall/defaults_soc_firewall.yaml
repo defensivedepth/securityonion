@@ -134,8 +134,3 @@ firewall:
       title: Ports
       syntax: yaml
       helpLink: firewall.html#port-groups
-  assigned_hostgroups__map__yaml:
-    description: Map
-    file: True
-    global: True
-    syntax: yaml
