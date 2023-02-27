@@ -125,15 +125,6 @@ firewall:
       global: True
       title: Receivers
       helpLink: firewall.html#host-groups
-  portgroups:
-    portgroups__yaml:
-      description: Port Groups
-      file: True
-      global: True
-      advanced: True
-      title: Port Groups
-      syntax: yaml
-      helpLink: firewall.html#function
   ports:
     ports__yaml:
       description: Ports in YAML.
@@ -143,3 +134,8 @@ firewall:
       title: Ports
       syntax: yaml
       helpLink: firewall.html#port-groups
+  assigned_hostgroups__map__yaml:
+    description: Map
+    file: True
+    global: True
+    syntax: yaml
